@@ -9,7 +9,7 @@ import { getRepositories } from 'testando/src/scripts/services/repositories.js'
 import { user } from 'testando/src/scripts/objects/user.js'
 import { screen } from 'testando/src/scripts/objects/screen.js'
 */
-
+console.log(dados, 'log do index.js'):
 document.getElementById('btn-search').addEventListener('click', () => {
     const userName = document.getElementById('input-search').value
     if (valideteEmptyImput(userName)) return
