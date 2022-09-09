@@ -1,15 +1,11 @@
-/*
-async function getScripts(){
-    
-}
 
-import { getUser } from 'testando/src/scripts/services/users.js'
-import { getRepositories } from 'testando/src/scripts/services/repositories.js'
 
-import { user } from 'testando/src/scripts/objects/user.js'
-import { screen } from 'testando/src/scripts/objects/screen.js'
-*/
-console.log(dados, 'log do index.js');
+import { getUser } from 'src/scripts/services/users.js'
+import { getRepositories } from 'src/scripts/services/repositories.js'
+
+import { user } from 'src/scripts/objects/user.js'
+import { screen } from 'src/scripts/objects/screen.js'
+
 document.getElementById('btn-search').addEventListener('click', () => {
     const userName = document.getElementById('input-search').value
     if (valideteEmptyImput(userName)) return
