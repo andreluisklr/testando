@@ -1,3 +1,7 @@
+async function getScripts(){
+    
+}
+
 import { getUser } from 'testando/src/scripts/services/users.js'
 import { getRepositories } from 'testando/src/scripts/services/repositories.js'
 
