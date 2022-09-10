@@ -1,25 +1,9 @@
-let getUser;
-let getRepositories;
-let user;
-let screen;
+import { getUser } from './src/scripts/services/users.js'
+import { getRepositories } from './src/scripts/services/repositories.js'
 
-let scripts;
+import { user } from './src/scripts/objects/user.js'
+import { screen } from './src/scripts/objects/screen.js'
 
-(async function getScript() {
-    let responses = await Promise.all([
-        fetch("src/scripts/services/users.js"),
-        fetch('src/scripts/services/repositories.js'),
-        fetch("src/scripts/objects/user.js"),
-        fetch("src/scripts/objects/screen.js")
-    ]);
-
-    scripts = await Promise.all(
-        responses[0].json(),
-        responses[1].json(),
-        responses[2].json(),
-        responses[3].json()
-    );
-})();
 document.getElementById('btn-search').addEventListener('click', () => {
     const userName = document.getElementById('input-search').value
     if (valideteEmptyImput(userName)) return
