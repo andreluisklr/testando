@@ -15,6 +15,11 @@ import { getRepositories } from './services/repositories.js'
 import { user } from './objects/user.js'
 import { screen } from './objects/screen.js'
 
+console.log('getUser:', getUser);
+console.log('getRepositories: ', getRepositories);
+console.log('user: ', user);
+console.log('screen :', screen);
+
 document.getElementById('btn-search').addEventListener('click', () => {
     const userName = document.getElementById('input-search').value
     if (valideteEmptyImput(userName)) return
