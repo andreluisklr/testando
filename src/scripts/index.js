@@ -1,5 +1,14 @@
-import * as module from 'src/scripts/services/users.js';
-console.log(module);
+ const moduleSpecifier = './src/scripts/services/users.js';
+  import(moduleSpecifier)
+    .then((module) => {
+    
+      // → logs 'Hi from the default export!'
+  
+      // → logs 'Doing stuff…'
+      console.log(module);
+    });
+
+
 
 document.getElementById('btn-search').addEventListener('click', () => {
     const userName = document.getElementById('input-search').value
