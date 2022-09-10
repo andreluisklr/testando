@@ -1,4 +1,4 @@
- const moduleSpecifier = 'scripts/services/users.js';
+ const moduleSpecifier = 'src/scripts/services/users.js';
   import(moduleSpecifier)
     .then((module) => {
     
