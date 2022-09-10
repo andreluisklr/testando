@@ -7,10 +7,10 @@ let scripts;
 
 (async function getScript() {
     let responses = await Promise.all([
-        fetch("/src/scripts/services/users.js"),
-        fetch("/src/scripts/services/repositories.js"),
-        fetch("/src/scripts/objects/user.js"),
-        fetch("/src/scripts/objects/screen.js"),
+        fetch("src/scripts/services/users.js"),
+        fetch('src/scripts/services/repositories.js"),
+        fetch("src/scripts/objects/user.js"),
+        fetch("src/scripts/objects/screen.js"),
     ]);
 
     scripts = await Promise.all(
