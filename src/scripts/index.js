@@ -1,4 +1,4 @@
-import * as module from './src/scripts/services/users.js';
+import * as module from '/src/scripts/services/users.js';
 console.log(module);
 
 document.getElementById('btn-search').addEventListener('click', () => {
