@@ -1,4 +1,5 @@
-
+import * as module from './src/scripts/services/users.js';
+console.log(module);
 
 document.getElementById('btn-search').addEventListener('click', () => {
     const userName = document.getElementById('input-search').value
