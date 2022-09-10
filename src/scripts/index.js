@@ -1,4 +1,5 @@
- const moduleSpecifier = './services/users.js';
+ /*
+const moduleSpecifier = './services/users.js';
   import(moduleSpecifier)
     .then((module) => {
     
@@ -6,9 +7,13 @@
   
       // → logs 'Doing stuff…'
       console.log(module);
-    });
+    });*/
 
+import { getUser } from './services/users.js'
+import { getRepositories } from './services/repositories.js'
 
+import { user } from './objects/user.js'
+import { screen } from './objects/screen.js'
 
 document.getElementById('btn-search').addEventListener('click', () => {
     const userName = document.getElementById('input-search').value
